@@ -29,7 +29,7 @@ namespace Assignment_4
 
             int presentNumber = 0;
 
-            // This loop calculates the sum two dice no
+            // loop calculates the sum two dice no
             for (int rolls = 1; rolls < 36000; rolls++)
             {
                 presentNumber = random.Next(1, 7) + random.Next(1, 7);

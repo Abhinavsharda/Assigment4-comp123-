@@ -100,12 +100,12 @@ namespace Airline_Reservation_System
             {
                 if (this._seatsAvailible[index] == true)
                 {
-                    Console.WriteLine("First Class Seat Booked");
+                    Console.WriteLine("First classed Seat Booked");
                 }
 
                 else if (index > 5)
                 {
-                    Console.WriteLine("Economic Class Seat Booked");
+                    Console.WriteLine("Economic Class Booked");
                 }
             }
             Console.WriteLine();
@@ -116,7 +116,7 @@ namespace Airline_Reservation_System
             {
                 if (this._seatsAvailible[index] == true)
                 {
-                    Console.Write(" Economic Class Seat Selected  ");
+                    Console.Write(" Economic Class Selected  ");
                 }
 
             }
