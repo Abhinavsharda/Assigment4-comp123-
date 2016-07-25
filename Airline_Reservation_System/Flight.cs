@@ -4,29 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /**
- * Author: Inderjeet Singh
- * StudentNumber: 300874118
- * Description: Driver class for Airline_Reservation_System
- * Version: 0.0.1
- * DateCreated: July 21rd, 2016
- * DateModified: July 21rd, 2016
+ * Author: abhinav sharda
+ * StudentNumber: 300868625
+ * Description: Driver class Airline_Reservation_System
  */
 namespace Airline_Reservation_System
 {
     class Flight
     {
-        //Private Instance variables++++++++++++++++++++
+        //Private Instance variables-------------------
         private bool[] _seatsAvailible = new bool[10];
         private string ChangeClass;
 
-        //Public Properties ++++++++++++++++++++++++++++
+        //Public Properties --------------------------
         public Flight()
         {
             _initializeArray();
         }
 
 
-        //Private Methdos ++++++++++++++++++++++++++++++
+        //Private Methdos -----------------------------
         private void _initializeArray()
         {
             for (int i = 0; i < _seatsAvailible.Length; i++)
@@ -35,7 +32,7 @@ namespace Airline_Reservation_System
             }
         }
 
-        //Public Methods +++++++++++++++++++++++++++++++
+        //Public Methods --------------------------------
         public void BusinessClass()
         {
             int seatNumber = 0;
@@ -50,7 +47,7 @@ namespace Airline_Reservation_System
                 }
                 else if (seatNumber == 4)
                 {
-                    Console.WriteLine("All first class seats have been booked");
+                    Console.WriteLine("first class have been booked");
                     Console.WriteLine("Whould you like to book your seat in the Economic Class?/n Y) Yes /n N) No");
                     ChangeClass = Convert.ToString(Console.ReadLine());
                     Console.WriteLine("Next flight leaves in 3 hours");
